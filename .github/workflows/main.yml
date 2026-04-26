@@ -15,6 +15,7 @@ on:
         options:
           - all
           - home
+          - organizers
 
 jobs:
   scrape:
@@ -26,6 +27,8 @@ jobs:
         category:
           - name: home
             display_name: Home
+          - name: organizers
+            display_name: Organizers
     
     name: Scrape ${{ matrix.category.display_name }}
     
