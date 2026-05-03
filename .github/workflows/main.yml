@@ -16,6 +16,7 @@ on:
           - all
           - home
           - organizers
+          - super_saver
 
 jobs:
   scrape:
@@ -29,6 +30,8 @@ jobs:
             display_name: Home
           - name: organizers
             display_name: Organizers
+          - name: super_saver
+            display_name: Super Saver
     
     name: Scrape ${{ matrix.category.display_name }}
     
