@@ -657,7 +657,7 @@ class HomeScraper:
             return
 
         # Step 2: Download images (and upload to R2 incrementally)
-        self.download_all_images()
+        # self.download_all_images()  # disabled: image download only enabled for LogicPulse/coupons
 
         # Step 3: Save to Excel and upload to R2
         if self.r2_client:
